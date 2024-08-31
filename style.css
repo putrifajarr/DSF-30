@@ -1,0 +1,297 @@
+:root {
+  --clr-primary: #b08968;
+  --clr-dark: #7f5539;
+  --clr-black: #000000;
+  --clr-light: #e6ccb2;
+  --clr-white: #ede0d4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+body{
+  background-color: var(--clr-white);
+}
+
+/*  ============= header ============= */
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  width: 100%;
+  padding-bottom: 4px;
+  /* background-color: var(--clr-primary); */
+}
+header .wrap {
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a img {
+  margin-top: 8px;
+  width: 200px;
+  vertical-align: middle;
+  /* background-color: rgba(255,245,237, 0.1); */
+  background-color: rgba(176,137,104,0.6);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+
+header ul {
+  margin-top:4px;
+  display: flex;
+  font-family: "Karla", sans-serif;
+  padding: 12px 24px;
+  border-radius: 16px;
+  background-color: rgba(176,137,104,0.6);
+  backdrop-filter: blur(6px);
+  gap: 16px;
+}
+
+header ul li {
+  display: block;
+}
+
+header a:hover{
+  color: white;
+}
+header a {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* ============= Banner ============= */
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/village-drone.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.title {
+  color: var(--clr-light);
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--clr-dark);
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 2.8px 3.2px 4px rgba(0,0,0, 0.4);
+}
+
+.title:hover{
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+  box-shadow: 2.8px 3.2px 4px rgba(0,0,0, 0.4);
+  transform: translateY(-5px);
+}
+
+/* ============= Our Room ============= */
+.our-room {
+  padding: 5%;
+}
+
+.title-section{
+  display: flex;
+  justify-content: center;
+}
+
+.title-section h2{
+  display: inline-block;
+  text-align: center;
+  padding: 12px 64px;
+  background-color: var(--clr-primary);
+  color: white;
+  border-radius: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card-wrapper {
+  display: flex;
+  padding-top: 24px;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  padding: 16px 16px 24px;
+  margin-right: 16px;
+  transition: 0.3s;
+  border-radius: 8px;
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-dark);
+
+}
+.card:hover {
+  background: var(--clr-light);
+  cursor: pointer;
+  box-shadow:rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border: none;
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.card h5 {
+  text-align: center;
+  padding-top: 8px;
+}
+.card h5 a {
+  color: var(--clr-dark);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.card p {
+  font-size: 14px;
+  padding-top: 8px;
+  text-align: center;
+}
+
+/*=========== eksplor =============*/
+.explore{
+  padding: 0% 5%;
+  align-items: center;
+}
+
+.title-explore{
+  display: flex;
+  justify-content: center;
+}
+
+.title-explore h2 {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  font-size: 22px;
+  margin-top:12px;
+  padding: 12px 64px;
+  border-radius: 24px;
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+.explore-container p{
+  font-size:16px;
+  text-align:center;
+  justify-content: center;
+  width: 320px;
+}
+
+.explore-container{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 64px;
+  padding-top: 32px;
+}
+
+.gambar-set{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 16px;
+}
+
+.gambar img{
+  transition: 0.3s;
+  border-radius: 12px;
+  width: 100%;
+}
+
+/* =========== Discover ===========*/
+
+.discover {
+  margin-top: 72px;
+  padding: 5% 10%;
+  background-image: url(./assets/discover.jpg);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+  border-radius: 12px;
+  gap: 36px;
+}
+
+.title-discover{
+  padding: 16px 36px;
+  background-color: rgba(255, 221, 192, 0.6);
+  backdrop-filter: blur(2px);
+  border-radius: 22px;
+}
+
+.title-discover h2 {
+  margin-top: 24px;
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.title-discover p {
+  width: 80%;
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.5;
+  margin: 0 auto 40px;
+}
+
+.klik-discover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.klik-ini a{
+  background-color: var(--clr-primary);
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth animations */
+  color: white;
+  text-decoration: none;
+}
+
+.klik-ini a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+.text-discover {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* 1 ~ 420 px */
+@media (max-width: 420px) {
+  /* .title {
+    color: red;
+    font-size: 12px;
+  } */
+}
